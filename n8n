@@ -55,3 +55,6 @@ Expert on desktop app building using tauri 2.x. Know how to adapt to the HcI of 
 @agent-tauri-desktop-expert please implement @specs/0001-spec.md
 
 Looks like the desktop UI and the web UI are different. what's the problem?[Image #1] [Image #2] You can see here a desktop UI doesn't have the sidebar.Please fix it and make sure you verify everything work as expected
+
+There are two more issues:
+1. Create new file doesn't work. If a user clicks "Create new file,it should create a new Excalidraw file in the current directory.2. When a user loads a folder, the sidebar should use a tree view toshow all the Excalidraw files in that folder and all the subfolders.Right now,it only shows the files, not the subfolders. Please helpto fix both issues. Once you fix them, make sure the LinkedIncompiling formatting is all good, and then commit the code.
