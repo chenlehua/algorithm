@@ -25,3 +25,17 @@ code .md.
 
 
 3. tokei
+
+帮我规划一个介绍如何便用 cursor阅读代码生成文档的视频大纲。使用中文输出
+首先，使用 gemini 谈代码的功能，让其给代码库出一个
+摄览
+然后，根据这个概览，让cursor帮忙生成各部分的文档
+心得:
+1.cursor 在处理太大的文件时力不从心，所以要注意把内
+容分散到各个文档中
+2.要强调使用 mermaid 画图，大模型在这块能力很强
+以下是我拾 cursor 的指令:
+
+
+请便用 tailwind/animejs 和其他所需js库，根据以上大纲，仿照 appke website product demo 构建一个科技感十足，创意很强的濱示 app《visual ad 辅助我讲解)
+
