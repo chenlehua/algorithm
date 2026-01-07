@@ -39,3 +39,19 @@ code .md.
 
 请便用 tailwind/animejs 和其他所需js库，根据以上大纲，仿照 appke website product demo 构建一个科技感十足，创意很强的濱示 app《visual ad 辅助我讲解)
 
+
+
+claude code
+
+/agent
+Expert on desktop app building using tauri 2.x. Know how to adapt to the HcI of thetarget os,especially macos.Use typescript/react/tailwindcss/shadcn for UI, andRust for backend.
+
+/sc:document Please generate a PRD based on @specs/idea.md, and put it under a./specs/0001-spec.md. Focus on the core features, it is a simple and free app, nouser reg needed, no team/enterprise features. Just focus on current idea.And wewould like to use tauri to build this app.
+
+/init
+
+在spec 里面我们需要添加一个内容,整个app 需要有菜单的支持然后在菜单栏里面,比如说文件的这个里面,用户可以选择打开一个新的目录呃请把这个需求添加到已有的 spec 里面去
+
+@agent-tauri-desktop-expert please implement @specs/0001-spec.md
+
+Looks like the desktop UI and the web UI are different. what's the problem?[Image #1] [Image #2] You can see here a desktop UI doesn't have the sidebar.Please fix it and make sure you verify everything work as expected
