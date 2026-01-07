@@ -1,0 +1,27 @@
+1. n8n有哪些核心的概念或者元素
+
+2.请阅读n8n源码，然后分别找出以下要素对应的数据结构，以下是n8n的一些核心概念和元素
+
+
+
+将以上内容写入./specs/design.md中，并添加mermaid chart 来揭示数据结构之间的关系
+
+我把 speks/design.md 重命名为specs/interface.md。现在请根据代码库，研究 Workflow 是怎么运行的，请创建新的文档execution.md 详细介绍运行流程，并specs使用mermaid 绘制flow diagram,sequential diagram图表清晰地帮助我理解 n8n workflow
+
+现在聚焦在节点上，根据源代码帮我写一篇文档 specs/node.md详细介绍几种不同的节点，它们有什么特点功能，如何构建，如何配置，如何执行，并相应用]mermaid 绘制各种图表。请给出对应代码的路径。
+
+请在 specs/node.md 中列出目前n8n支持的所有节点。然后,新建一个文件 specs/nodes/ai_agent.md 详细描述 AI agent 节点是如何配置和运行的，并详细介绍其属性Chat Model,Memory,Tools,Output parser,用mermaid 绘制相应图表
+
+在 ai_agent.md 中请根据代码详细介绍 tools 和 output parser 的数据结构，支持的各种类型，工作流程，实现细节，并使用mermaid 很好地展示它们的流程和功能
+
+请根据代码库详细介绍核心节点Function 的功能，实现逻辑，流程，并使用 mermaid chart可视化。文档写入到:specs/nodes/funtion .md.
+
+请根据代码库详细介绍核心节点 code 节点的功能，实现逻辑，流程，并使用 mermaid chart 可视化。文档写入到:specs/nodes/
+code .md.
+
+好，现在根据 @specs 下面的所有内容，以及你对代码库的理解，損写一个用Rust重写 n8n 的设计文档，系统名为 cella。所有数据结构和接口请给出 Rust 对应的方案，尽可能详细。
+请用 mermaid 构建 struct/trait 之间的关系，以及主要流程图。在设计中，Code / Function node 用 wasm 实现(可以使用 @extism),AI agent 使用 arig ,cronjob 使用 aws eventbridge 触发(本地运行可以使用tokio-cron-scheduler)其他依赖使用标准的 Rust库的最新版本，
+如 tokio，axum，thiserror,anyhow，tower，tower-http 等。系统包含一个本地的 workflow runner，可以在本地运行和测试，也包含一个 lambdafunction 版本。文档请撰写在 specs/cella.md。输出内容为中文。
+
+
+3. tokei
